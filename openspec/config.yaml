@@ -1,0 +1,6 @@
+schema: spec-driven
+context: |
+  AfterMerge is an offline Next.js demo for GitLab's Life After Code hackathon.
+  Path A: a new fictional tenant (Northline Mechanical / FieldClear), not a wrapper.
+  The post-merge agent is simulated in the browser. Do not add a real GitLab token,
+  a database, or a model API.

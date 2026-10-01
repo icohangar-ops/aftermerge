@@ -1,0 +1,72 @@
+# Example only. AfterMerge does not run this file.
+# It shows the jobs a real agent would trigger after a merge webhook.
+# See docs/architecture.md.
+
+stages:
+  - sast
+  - deps
+  - deploy
+  - smoke
+  - notes
+  - approve
+  - promote
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == "trigger"
+
+sast:
+  stage: sast
+  image: semgrep/semgrep
+  script:
+    - semgrep scan --config p/gitlab-sast --json --output gl-sast.json
+  artifacts:
+    reports:
+      sast: gl-sast.json
+
+deps:
+  stage: deps
+  image: node:22
+  script:
+    - npm audit --omit=dev --json > gl-dependency-scanning.json || true
+  artifacts:
+    paths:
+      - gl-dependency-scanning.json
+
+deploy_staging:
+  stage: deploy
+  environment:
+    name: staging
+    url: https://staging.example.internal
+  script:
+    - echo "deploy $CI_COMMIT_SHA to staging"
+
+smoke:
+  stage: smoke
+  needs: [deploy_staging]
+  script:
+    - echo "playwright smoke against staging"
+
+notes:
+  stage: notes
+  script:
+    - echo "AfterMerge posts release notes via the GitLab API"
+
+approve:
+  stage: approve
+  environment:
+    name: production
+  when: manual
+  allow_failure: false
+  script:
+    - echo "protected environment approval"
+
+promote:
+  stage: promote
+  needs: [approve]
+  environment:
+    name: production
+    url: https://prod.example.internal
+  script:
+    - echo "deploy $CI_COMMIT_SHA to production"
