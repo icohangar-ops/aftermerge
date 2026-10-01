@@ -2,7 +2,9 @@
 
 Three-minute screen recording for the GitLab Life After Code hackathon. The route is the teleprompter. This file is the shot list.
 
-**Save the take as `docs/aftermerge-demo.mp4`.** That file is not in the repo yet. Commit it after you record. Git LFS is already tracking `docs/aftermerge-demo.mp4` (see `.gitattributes`).
+**Recording:** [`docs/aftermerge-demo.mp4`](./aftermerge-demo.mp4) (committed via Git LFS).
+
+**YouTube (Public):** _pending upload — will be linked here._
 
 ```bash
 npm install
@@ -60,14 +62,7 @@ Narration, in order:
 
 Findings on screen use `DEMO-` ids. They are simulated.
 
-## Commit the video
+## Video files
 
-Git LFS is configured for the path below. From the repo root, after the file exists:
-
-```bash
-git add docs/aftermerge-demo.mp4 docs/DEMO.md
-git commit -m "Add the AfterMerge demo recording"
-git push
-```
-
-If `git lfs` is not installed on the machine that commits the file, install it first so the mp4 is stored as an LFS object instead of a normal blob. Do not commit a different filename. The placeholder path is `docs/aftermerge-demo.mp4`.
+- Local / GitHub: [`docs/aftermerge-demo.mp4`](./aftermerge-demo.mp4)
+- YouTube (Public): _pending — Cubiczan channel_

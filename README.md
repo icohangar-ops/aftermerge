@@ -57,7 +57,9 @@ Nothing in the loop calls the network. Findings use `DEMO-` ids so they are not 
 3. When the approval gate appears (~2:16), click **Approve promote**.
 4. The close card states the Path A / Life After Code point. Stop around 3:00.
 
-The recording is not in the tree yet. After the take, commit it at **`docs/aftermerge-demo.mp4`**. Git LFS is already tracking that path (`.gitattributes`). Until that file exists, use `/demo` as the live walkthrough.
+**Demo video:** [`docs/aftermerge-demo.mp4`](docs/aftermerge-demo.mp4) · YouTube: _pending public upload_
+
+Git LFS tracks that path (`.gitattributes`). Live walkthrough: `/demo`.
 
 You can also drive it yourself from the board with **Simulate merge**, then open any historical run to compare a hold, a waiver, and an auto-promote.
 
