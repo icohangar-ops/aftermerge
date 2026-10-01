@@ -57,7 +57,7 @@ Nothing in the loop calls the network. Findings use `DEMO-` ids so they are not 
 3. When the approval gate appears (~2:16), click **Approve promote**.
 4. The close card states the Path A / Life After Code point. Stop around 3:00.
 
-**Demo video:** [`docs/aftermerge-demo.mp4`](docs/aftermerge-demo.mp4) · YouTube: _pending public upload_
+**Demo video:** [`docs/aftermerge-demo.mp4`](docs/aftermerge-demo.mp4) · YouTube: [https://youtu.be/jl3muP7JNEE](https://youtu.be/jl3muP7JNEE)
 
 Git LFS tracks that path (`.gitattributes`). Live walkthrough: `/demo`.
 

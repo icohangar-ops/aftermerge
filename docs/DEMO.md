@@ -4,7 +4,7 @@ Three-minute screen recording for the GitLab Life After Code hackathon. The rout
 
 **Recording:** [`docs/aftermerge-demo.mp4`](./aftermerge-demo.mp4) (committed via Git LFS).
 
-**YouTube (Public):** _pending upload — will be linked here._
+**YouTube (Public):** [https://youtu.be/jl3muP7JNEE](https://youtu.be/jl3muP7JNEE)
 
 ```bash
 npm install
@@ -65,4 +65,4 @@ Findings on screen use `DEMO-` ids. They are simulated.
 ## Video files
 
 - Local / GitHub: [`docs/aftermerge-demo.mp4`](./aftermerge-demo.mp4)
-- YouTube (Public): _pending — Cubiczan channel_
+- YouTube (Public): [https://youtu.be/jl3muP7JNEE](https://youtu.be/jl3muP7JNEE)
