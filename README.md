@@ -8,6 +8,16 @@ Built for GitLab's Life After Code (Transcend) hackathon.
 
 **Author:** Cubiczan / Sam Desigan · sam@cubiczan.com
 
+<!-- product-screenshots:start -->
+## Product screenshots
+
+Post-merge board showing simulated runs, risk levels, approval gates, and promotion statuses. The demo does not call GitLab.
+
+![aftermerge product interface](docs/screenshots/product-overview.png)
+
+Captured from the [live UI](https://aftermerge.vercel.app) on October 2, 2026. No payment, generation, or other action was submitted to create this capture.
+<!-- product-screenshots:end -->
+
 ## Life After Code
 
 Life After Code is the stretch of work that starts when the diff is already merged: prove it is safe, put it on staging, see if the product still behaves, tell the people who operate it, and only then ship. AfterMerge puts an agent on that stretch.
